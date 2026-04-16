@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Потребности — ООО «Все отели мира»</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="1.html"><img src="logo.png" alt="Лого" style="width: 100px; height: auto;"> </a>
+        <span>Все отели мира</span>
+    </div>
+    <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links" id="nav-links">
+            <li><a href="1.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="potr.html"  style="color: #007bff;">Потребности</a></li>
+            <li><a href="#">Сервисы</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    
+    <section class="benefits-block">
+        <h1 class="section-title">Станьте частью нашей команды</h1>
+        <p>ООО «Все отели мира» — это команда профессионалов, влюбленных в путешествия. Мы ищем активных сотрудников и надежных партнеров для расширения нашей сети в России, Китае и Испании. Мы предлагаем стабильность, обучение и возможность работать с крупнейшими авиаперевозчиками и отелями мира.</p>
+    </section>
+
+    <section id="vacancies">
+        <h2 style="text-align: center;">Актуальные вакансии</h2>
+
+        <!-- Карточка вакансии 1 -->
+        <div class="vacancy-card">
+            <span class="vacancy-tag">Менеджер по туризму</span>
+            <h3 class="vacancy" style="text-align: left;">Менеджер по бронированию (Испанское направление)</h3>
+            <p><strong>Город:</strong> Москва / Гибрид</p>
+            <p><strong>Обязанности:</strong> Подбор туров, работа с базой отелей Испании, сопровождение клиентов от заявки до возвращения.</p>
+            <p><strong>Требования:</strong> Опыт от 1 года, знание английского или испанского языка, стрессоустойчивость.</p>
+            <p><strong>Условия:</strong> Оклад 70 000 руб. + бонусы, офис в центре, ДМС.</p>
+        </div>
+
+        <!-- Карточка вакансии 2 -->
+        <div class="vacancy-card">
+            <span class="vacancy-tag">Партнерство</span>
+            <h3 class="vacancy" style="text-align: left;">Специалист по работе с отелями (Китай)</h3>
+            <p><strong>Город:</strong> Удаленно</p>
+            <p><strong>Обязанности:</strong> Поиск новых партнеров в КНР, заключение договоров, контроль качества услуг.</p>
+            <p><strong>Требования:</strong> Свободный китайский язык, навыки ведения переговоров.</p>
+            <p><strong>Условия:</strong> Гибкий график, высокая комиссия за каждый контракт.</p>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="feedback-form">
+        <h2 style="margin-top:0; text-align:center;">Откликнуться на вакансию / Предложить сотрудничество</h2>
+        <p>Заполните форму, и наш HR-менеджер свяжется с вами в течение рабочего дня.</p>
+        
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>Ваше ФИО *</label>
+                <input type="text" name="fio" placeholder="Иванов Иван Иванович" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Контактный телефон *</label>
+                <input type="tel" name="phone" placeholder="+7 (900) 000-00-00" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Сообщение (в какую команду или по какому вопросу)</label>
+                <textarea name="message" rows="4" placeholder="Расскажите немного о себе или вашем предложении..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Прикрепить резюме или КП (PDF, DOCX)</label>
+                <input type="file" name="resume" accept=".pdf,.doc,.docx">
+            </div>
+            
+            <button type="submit" class="btn-submit">Отправить заявку</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <strong>Контактная информация:</strong><br>
+            Адрес: г. Москва, ул. Примерная, д. 10<br>
+            Тел: +7 (495) 000-00-00<br>
+            Email: info@allhotels.ru
+        </div>
+        <div>
+            <ul>
+                <li><a href="1.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="potr.html">Потребности</a></li>
+                <li><a href="#">Сервисы</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+            </ul>
+        </div>
+        <div>
+            <strong>Реквизиты:</strong><br>
+            ИНН/КПП: 7700000000/770000001<br>
+            ООО «Все отели мира»
+        </div>
+    </div>
+</footer>
+
+</body>
+<script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+
+    burger.addEventListener('click', () => {
+        // Переключаем класс .show у списка меню
+        navLinks.classList.toggle('show');
+    });
+
+
+
+</script>
+</html>

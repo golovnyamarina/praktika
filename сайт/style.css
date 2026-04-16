@@ -1,0 +1,369 @@
+ 
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FDFFFD; /* Светлый фон */
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .logo img { height: 40px; margin-right: 10px; }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a { text-decoration: none; color: #333; font-weight: 500; }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero-banner {
+            /* Путь к картинке */
+            background-image: url('592.jpg');
+            
+            /* Настройки фона */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            /* Отступы от краев экрана */
+            margin: 0 20px;
+            padding: 0 20px;
+            /* Высота и Flexbox для расположения текста */
+            height: 400px; 
+            display: flex;
+            flex-direction: column; /* Текст встает в колонку (один под другим) */
+            align-items: center;    /* Центровка по горизонтали */
+            justify-content: center; /* Центровка по вертикали */
+            
+            text-align: center;
+            color: rgb(0, 0, 0); 
+        }
+
+        .hero-banner h1 {
+            font-size: 3rem;
+            margin: 0 0 10px 0; /* Убираем лишние отступы, оставляем только снизу */
+        }
+
+        .hero-banner p {
+            font-size: 1.5rem;
+            margin: 0; /* Убираем стандартные отступы параграфа */
+        }
+        .reviews-section {
+            background: #fff;
+            padding: 50px 20px; /* Отступы всей секции */
+        }
+
+        .reviews-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .reviews-container {
+            display: flex;
+            gap: 20px; /* Расстояние между карточками */
+            justify-content: center;
+            flex-wrap: wrap; /* Чтобы на маленьких экранах отзывы переносились */
+        }
+
+        .review-card {
+            width: 300px;
+            padding: 30px 20px; /* Внутренние отступы текста */
+            
+            /* Рамка и скругление как на картинке */
+            border: 1px solid #ccc; 
+            border-radius: 12px;
+            
+            /* Легкая тень для объема */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            
+            font-style: italic;
+            text-align: center;
+            background-color: #fff;
+            line-height: 1.5; /* Расстояние между строками текста */
+        }
+.about-card {
+            width: 300px;
+            padding: 30px 20px; /* Внутренние отступы текста */
+            
+            /* Рамка и скругление как на картинке */
+            border: 1px solid #ccc; 
+            border-radius: 12px;
+            
+            /* Легкая тень для объема */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            background-color: #fff;
+            line-height: 1.5; /* Расстояние между строками текста */
+        }
+
+/* Основной контейнер */
+.about-container {
+    display: grid;
+    /* Левая колонка узкая (1 часть), правая в два раза шире (2 части) */
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px; /* Расстояние между колонками */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Колонки */
+.about-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Расстояние между карточками внутри колонки */
+}
+
+/* Карточки */
+.about-card-small, .about-card-wide {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    /* Растягиваем карточки, чтобы они были одинаковыми по высоте в ряду */
+    flex: 1; 
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+/* Центрируем заголовки */
+h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+        section { padding: 40px 50px; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        
+        footer {
+            background-color: #EDFFE6;
+            padding: 30px 50px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+        }
+        .footer-content { display: flex; justify-content: space-between; }
+        .about {
+            display: flex;
+            justify-content: center; /* Центрирует сам блок */
+        }
+        /* Используем те же стили для единообразия */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid #eee; }
+        .logo { font-weight: bold; font-size: 24px; display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { text-decoration: none; color: #333; font-weight: 500; }
+        
+        .catalog-header { background: #f0f7ff; padding: 40px 50px; text-align: center; }
+        
+        section { padding: 40px 50px; }
+        .hotel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 20px; }
+        
+        .hotel-card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; transition: 0.3s; }
+        .hotel-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .hotel-card img { width: 100%; height: 200px; object-fit: cover; background: #ddd; }
+        .hotel-card-content { padding: 20px; }
+        .price { color: #28a745; font-weight: bold; font-size: 18px; }
+        
+        .country-badge { background: #BEFFC2; color: #007D08;; padding: 2px 8px; border-radius: 5px; font-size: 12px; text-transform: uppercase; font-weight: bold;}
+
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table th, table td { border: 1px solid #eee; padding: 12px; text-align: left; }
+        table th { background: #f8f9fa; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a { text-decoration: none; color: #333; font-weight: 500; }
+        footer {
+            list-style: none;
+            background-color: #EDFFE6;
+            padding: 30px 50px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+        }
+        .footer-content { display: flex; justify-content: space-between; }
+                nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a { text-decoration: none; color: #333; font-weight: 500; }
+        .catalog-header {
+            /* Путь к картинке */
+            background-image: url('image 3.png');
+            
+            /* Настройки фона */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+
+            /* Высота и Flexbox для расположения текста */
+            height: 400px; 
+            display: flex;
+            flex-direction: column; /* Текст встает в колонку (один под другим) */
+            align-items: center;    /* Центровка по горизонтали */
+            justify-content: center; /* Центровка по вертикали */
+            
+            text-align: center;
+            color: rgb(0, 0, 0); 
+        }
+
+        .catalog-header h1 {
+            font-size: 3rem;
+            margin: 0 0 10px 0; /* Убираем лишние отступы, оставляем только снизу */
+        }
+
+        .catalog-header p {
+            font-size: 1.5rem;
+            margin: 0; /* Убираем стандартные отступы параграфа */
+        }
+                nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a { text-decoration: none; color: #333; font-weight: 500; }
+        /* Стили из главной страницы для единообразия */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #ffffff; color: #333; line-height: 1.6; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid #eee; }
+        .logo { font-weight: bold; font-size: 24px; display: flex; align-items: center; }
+        .logo img { height: 40px; margin-right: 10px; }
+        nav ul { list-style: none; display: flex; gap: 20px; padding: 0; }
+        nav a { text-decoration: none; color: #333; font-weight: 500; }
+        
+        /* Стили для контента страницы Потребности */
+        .container { padding: 40px 50px; max-width: 1000px; margin: 0 auto; }
+        .section-title { text-align: center; color: #000000; margin-bottom: 30px; }
+        
+        .benefits-block { background: #EDFFE6; padding: 30px; border-radius: 8px; margin-bottom: 40px; }
+        
+        .vacancy-card { border: 1px solid #eee; border-radius: 8px; padding: 25px; margin-bottom: 20px; transition: box-shadow 0.3s; }
+        .vacancy-card:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .vacancy-tag { background: #BEFFC2; color: #007D08; padding: 4px 12px; border-radius: 4px; font-size: 14px; font-weight: bold; }
+        
+        /* Стили формы */
+        .feedback-form { background: #f9f9f9; padding: 40px; border-radius: 8px; border: 1px solid #eee; margin-top: 50px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .btn-submit { background: #28a745; color: white; border: none; padding: 15px 30px; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%; }
+        .btn-submit:hover { background: #218838; }
+
+       footer {
+            background-color: #EDFFE6;
+            padding: 30px 50px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+        }
+        .footer-content { display: flex; justify-content: space-between; }
+
+        footer ul {
+    list-style-type: none; /* Убирает точки */
+    padding: 0;            /* Убирает внутренний отступ слева */
+    margin: 0;             /* Убирает внешние отступы */
+}
+
+footer ul li {
+    margin-bottom: 5px;    /* Небольшой отступ между ссылками, чтобы не слипались */
+}
+
+footer ul li a {
+    text-decoration: none; /* (Опционально) Уберет подчеркивание у ссылок */
+    color: #000;           /* (Опционально) Сделает ссылки черными */
+}
+
+/* Базовые стили */
+/* Стили для компьютера */
+/* --- Стили для всех устройств --- */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили иконки бургера */
+.burger {
+    display: none; /* По умолчанию скрыт (для ПК) */
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    z-index: 1001; /* Чтобы был поверх всего */
+}
+
+.burger span {
+    width: 30px;
+    height: 4px;
+    background-color: #B1BEAB;
+    border-radius: 2px;
+}
+
+/* --- Мобильная версия (экраны до 768px) --- */
+@media (max-width: 768px) {
+    .burger {
+        display: flex; /* Показываем бургер на мобилках */
+    }
+
+    .nav-links {
+        display: none; /* ПОЛНОСТЬЮ ПРЯЧЕМ МЕНЮ ИЗ НАВИГАЦИИ */
+        flex-direction: column;
+        
+        /* Делаем меню выпадающим поверх контента */
+        position: absolute;
+        top: 60px; /* Высота вашей шапки */
+        right: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    /* Этот класс добавит JavaScript при клике */
+    .nav-links.show {
+        display: flex; /* Меню появится при нажатии */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* --- Версия для ПК (экраны больше 768px) --- */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex; /* Показываем в ряд на больших экранах */
+        gap: 20px;
+    }
+}

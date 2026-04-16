@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — ООО «Все отели мира»</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="1.html"><img src="logo.png" alt="Лого" style="width: 100px; height: auto;"> </a>
+        <span>Все отели мира</span>
+    </div>
+    <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links" id="nav-links">
+            <li><a href="1.html">Главная</a></li>
+            <li><a href="catalog.html"  style="color: #007bff;">Каталог</a></li>
+            <li><a href="potr.html">Потребности</a></li>
+            <li><a href="#">Сервисы</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="catalog-header">
+        <h1>Каталог отелей и услуг</h1>
+        <p>Лучшие предложения в России, Китае и Турции</p>
+    </section>
+<section id="catalog">
+    <div class="catalog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+        
+        <!-- 1. Спецпредложения -->
+        <div class="catalog-item" style="border: 2px solid #ff4757; padding: 20px; border-radius: 8px; text-align: center;">
+            <h3>Спецпредложения</h3>
+            <p>Горящие туры и эксклюзивные скидки</p>
+            <a href="#" style="color: #ff4757; font-weight: bold;">Смотреть →</a>
+        </div>
+
+        <!-- 2. Отели России -->
+        <div class="catalog-item" style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center;">
+            <h3>Отели России</h3>
+            <p>Золотое кольцо, Сочи, Алтай и Камчатка</p>
+            <a href="#" style="color: #007bff;">Перейти →</a>
+        </div>
+
+        <!-- 3. Отели Китая -->
+        <div class="catalog-item" style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center;">
+            <h3>Отели Китая</h3>
+            <p>Пекин, Шанхай и пляжи острова Хайнань</p>
+            <a href="#" style="color: #007bff;">Перейти →</a>
+        </div>
+
+        <!-- 4. Отели Турции -->
+        <div class="catalog-item" style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center;">
+            <h3>Отели Турции</h3>
+            <p>Все включено: Анталья, Бодрум, Мармарис</p>
+            <a href="#" style="color: #007bff;">Перейти →</a>
+        </div>
+
+        <!-- 5. Санатории и пансионаты -->
+        <div class="catalog-item" style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center;">
+            <h3>Санатории и пансионаты</h3>
+            <p>Оздоровительный отдых и лечение</p>
+            <a href="#" style="color: #007bff;">Перейти →</a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Сведения о странах и отелях -->
+    <section id="hotels">
+        <h2 style="text-align: center;">Популярные направления и отели</h2>
+        <div class="hotel-grid">
+            <!-- Отель 1 (Испания) -->
+            <div class="hotel-card">
+                <img src="image 4.png" style="height: 200px; background: #ccc; display: flex; align-items: center; justify-content: center;">
+                <div class="hotel-card-content">
+                    <span class="country-badge">Испания</span>
+                    <h3>Costa Brava Resort</h3>
+                    <p>Сведения о стране: Теплый климат, средиземноморская кухня, богатая история.</p>
+                    <p class="price">от 85 000 ₽ / чел</p>
+                    <button style="width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Забронировать</button>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="image 4.png" style="height: 200px; background: #ccc; display: flex; align-items: center; justify-content: center;">
+                <div class="hotel-card-content">
+                    <span class="country-badge">Испания</span>
+                    <h3>Costa Brava Resort</h3>
+                    <p>Сведения о стране: Теплый климат, средиземноморская кухня, богатая история.</p>
+                    <p class="price">от 85 000 ₽ / чел</p>
+                    <button style="width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Забронировать</button>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="image 4.png" style="height: 200px; background: #ccc; display: flex; align-items: center; justify-content: center;">
+                <div class="hotel-card-content">
+                    <span class="country-badge">Испания</span>
+                    <h3>Costa Brava Resort</h3>
+                    <p>Сведения о стране: Теплый климат, средиземноморская кухня, богатая история.</p>
+                    <p class="price">от 85 000 ₽ / чел</p>
+                    <button style="width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Забронировать</button>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="image 4.png" style="height: 200px; background: #ccc; display: flex; align-items: center; justify-content: center;">
+                <div class="hotel-card-content">
+                    <span class="country-badge">Испания</span>
+                    <h3>Costa Brava Resort</h3>
+                    <p>Сведения о стране: Теплый климат, средиземноморская кухня, богатая история.</p>
+                    <p class="price">от 85 000 ₽ / чел</p>
+                    <button style="width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Забронировать</button>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="image 4.png" style="height: 200px; background: #ccc; display: flex; align-items: center; justify-content: center;">
+                <div class="hotel-card-content">
+                    <span class="country-badge">Испания</span>
+                    <h3>Costa Brava Resort</h3>
+                    <p>Сведения о стране: Теплый климат, средиземноморская кухня, богатая история.</p>
+                    <p class="price">от 85 000 ₽ / чел</p>
+                    <button style="width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Забронировать</button>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="image 4.png" style="height: 200px; background: #ccc; display: flex; align-items: center; justify-content: center;">
+                <div class="hotel-card-content">
+                    <span class="country-badge">Испания</span>
+                    <h3>Costa Brava Resort</h3>
+                    <p>Сведения о стране: Теплый климат, средиземноморская кухня, богатая история.</p>
+                    <p class="price">от 85 000 ₽ / чел</p>
+                    <button style="width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Забронировать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Прайс-лист на доп. услуги -->
+    <section id="prices">
+        <h2 style="text-align: center;">Цены на оказываемые услуги</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Услуга</th>
+                    <th>Описание</th>
+                    <th>Стоимость</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Оформление визы</td>
+                    <td>Консультация и подача документов (Китай, Испания)</td>
+                    <td>от 5 000 ₽</td>
+                </tr>
+                <tr>
+                    <td>Трансфер</td>
+                    <td>Встреча в аэропорту и доставка до отеля</td>
+                    <td>Бесплатно*</td>
+                </tr>
+                <tr>
+                    <td>Страхование</td>
+                    <td>Медицинская страховка на весь период поездки</td>
+                    <td>от 1 500 ₽</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 12px; color: #666; margin-top: 10px;">*При бронировании отеля от 7 ночей.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <strong>Контактная информация:</strong><br>
+            Адрес: г. Москва, ул. Примерная, д. 10<br>
+            Тел: +7 (495) 000-00-00<br>
+            Email: info@allhotels.ru
+        </div>
+        <div>
+            <ul>
+                <li><a href="1.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="potr.html">Потребности</a></li>
+                <li><a href="#">Сервисы</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+            </ul>
+        </div>
+        <div>
+            <strong>Реквизиты:</strong><br>
+            ИНН/КПП: 7700000000/770000001<br>
+            ООО «Все отели мира»
+        </div>
+    </div>
+</footer>
+
+</body>
+<script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+
+    burger.addEventListener('click', () => {
+        // Переключаем класс .show у списка меню
+        navLinks.classList.toggle('show');
+    });
+
+
+
+</script>
+</html>
